@@ -23,11 +23,10 @@ public class Sesion1 {
 	public void test() throws InterruptedException{
 		driver.get("https:/www.google.com");
 		GooglePage gp = new GooglePage(driver);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		gp.typeOnSearchBar("nintendo Wikipedia");
 		Thread.sleep(1000);
-		gp.clickResult();
+		gp.clickResultById(0);
 		gp.printResult();
-		
 	} 
 }

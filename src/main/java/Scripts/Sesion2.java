@@ -23,7 +23,7 @@ public class Sesion2 {
 	public void test() throws InterruptedException{
 		driver.get("https:/google.com");
 		GooglePage gp = new GooglePage(driver);
-		Thread.sleep(6000);
+		Thread.sleep(1000);
 		//Búsqueda en google
 		gp.typeOnSearchBar("Wikipedia");
 		//Click en primer resultado
